@@ -1,3 +1,4 @@
+package study.socket;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -17,8 +18,7 @@ public class TestSocket {
 			writer = new PrintWriter(socket.getOutputStream());
 			reader = new BufferedReader(new InputStreamReader(socket.getInputStream()));
 
-			// 发送xml数据
-			writer.println(UTTaskCTLEUtil.formatMessage("5dc58705-a284-461a-91cd-a1afca190f9a|1|0|自动化执行sb了！", "10111"));
+			writer.println("5dc58705");
 			writer.flush();
 			socket.shutdownOutput();
 			

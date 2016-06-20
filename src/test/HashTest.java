@@ -1,5 +1,4 @@
-import test.Child;
-import test.Parent;
+package test;
 
 public class HashTest {
 

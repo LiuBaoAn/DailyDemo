@@ -1,3 +1,4 @@
+package study.socket;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -35,12 +36,7 @@ public class TestServerSocket {
 					System.out.println(message);
 					System.out.println("---------------------------------------------------------------------------------------");
 					
-					Object[] objects = UTTaskCTLEUtil.parseMessage(message.toString());
-					if(objects != null) {
-						writer.println(UTTaskCTLEUtil.formatResponseMessage("", "", "接收成功！"));
-					} else {
-						writer.println(UTTaskCTLEUtil.formatResponseMessage("", "", "接收失败！"));
-					}
+					writer.println("接收成功！");
 					writer.flush();
 					reader.close();
 					writer.close();

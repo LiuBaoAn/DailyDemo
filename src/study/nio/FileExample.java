@@ -1,4 +1,4 @@
-package nio;
+package study.nio;
 
 import java.io.FileNotFoundException;
 import java.io.RandomAccessFile;

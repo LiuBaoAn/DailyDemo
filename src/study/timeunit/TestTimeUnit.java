@@ -1,4 +1,4 @@
-package timeunit;
+package study.timeunit;
 
 import java.util.concurrent.TimeUnit;
 

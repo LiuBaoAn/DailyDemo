@@ -17,7 +17,7 @@ import java.util.Set;
  * @author Liu
  *
  */
-public class Nio_6_Selector {
+public class Nio_7_FileChannel {
 	
 	public static void main(String[] args) throws IOException {
 		Selector selector = Selector.open();

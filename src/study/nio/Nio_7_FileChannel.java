@@ -23,7 +23,7 @@ public class Nio_7_FileChannel {
 		Selector selector = Selector.open();
 		
 		ServerSocketChannel channel = ServerSocketChannel.open();
-		channel.bind(new InetSocketAddress("localhost", 11111));
+//		channel.bind(new InetSocketAddress("localhost", 11111));
 		channel.accept();
 		channel.configureBlocking(false); // 非阻塞
 		

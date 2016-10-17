@@ -23,7 +23,7 @@ public class Nio_9_ServerSocketChannel {
 	public static void main(String[] args) throws IOException {
 		
 		ServerSocketChannel channel = ServerSocketChannel.open();
-		channel.bind(new InetSocketAddress("localhost", 11111));
+//		channel.bind(new InetSocketAddress("localhost", 11111));
 		channel.accept();
 		channel.configureBlocking(false); // 非阻塞
 		
@@ -34,7 +34,7 @@ public class Nio_9_ServerSocketChannel {
 	public static void mainTest(String[] args) throws FileNotFoundException, IOException {
 
 		ServerSocketChannel channel = ServerSocketChannel.open();
-		channel.bind(new InetSocketAddress("localhost", 11111));
+//		channel.bind(new InetSocketAddress("localhost", 11111));
 //		channel.socket().bind(new InetSocketAddress("localhost", 11111));
 
 		channel.accept();

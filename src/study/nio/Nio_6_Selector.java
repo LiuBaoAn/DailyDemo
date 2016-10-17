@@ -23,7 +23,7 @@ public class Nio_6_Selector {
 		Selector selector = Selector.open();
 		
 		ServerSocketChannel channel = ServerSocketChannel.open();
-		channel.bind(new InetSocketAddress("localhost", 11111));
+//		channel.bind(new InetSocketAddress("localhost", 11111));
 		channel.accept();
 		channel.configureBlocking(false); // 非阻塞
 		
